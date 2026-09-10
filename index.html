@@ -24,11 +24,9 @@
       padding: 0;
     }
 
-
     html {
       scroll-behavior: smooth;
     }
-
 
     body {
 
@@ -46,13 +44,10 @@
       overflow-x: hidden;
     }
 
-
     button,
     textarea {
-
       font-family: inherit;
     }
-
 
     .app {
 
@@ -68,9 +63,7 @@
     }
 
 
-    /* =========================
-       HEADER
-    ========================= */
+    /* HEADER */
 
     header {
 
@@ -78,7 +71,6 @@
 
       text-align: center;
     }
-
 
     .logo {
 
@@ -89,12 +81,9 @@
       letter-spacing: 1px;
     }
 
-
     .logo span {
-
       color: #35d07f;
     }
-
 
     .subtitle {
 
@@ -106,9 +95,7 @@
     }
 
 
-    /* =========================
-       HERO
-    ========================= */
+    /* HERO */
 
     .hero {
 
@@ -131,7 +118,6 @@
         0 18px 45px rgba(0,0,0,.28);
     }
 
-
     .hero h1 {
 
       font-size: 25px;
@@ -140,7 +126,6 @@
 
       margin-bottom: 8px;
     }
-
 
     .hero p {
 
@@ -152,9 +137,7 @@
     }
 
 
-    /* =========================
-       CREATE BOX
-    ========================= */
+    /* CREATE BOX */
 
     .create-box {
 
@@ -170,7 +153,6 @@
         0 12px 35px rgba(0,0,0,.18);
     }
 
-
     .label {
 
       display: block;
@@ -183,7 +165,6 @@
 
       font-weight: 600;
     }
-
 
     textarea {
 
@@ -214,12 +195,9 @@
       line-height: 1.8;
     }
 
-
     textarea::placeholder {
-
       color: #64756c;
     }
-
 
     textarea:focus {
 
@@ -230,15 +208,11 @@
     }
 
 
-    /* =========================
-       VIDEO SIZE
-    ========================= */
+    /* VIDEO SIZE */
 
     .size-title {
-
       margin-top: 20px;
     }
-
 
     .options {
 
@@ -251,7 +225,6 @@
 
       margin-top: 12px;
     }
-
 
     .option {
 
@@ -274,12 +247,9 @@
       transition: .2s;
     }
 
-
     .option:hover {
-
       border-color: #35d07f;
     }
-
 
     .option.active {
 
@@ -293,7 +263,6 @@
         0 0 18px rgba(53,208,127,.12);
     }
 
-
     .option .size {
 
       display: block;
@@ -306,9 +275,7 @@
     }
 
 
-    /* =========================
-       CREATE BUTTON
-    ========================= */
+    /* CREATE BUTTON */
 
     .create-btn {
 
@@ -344,22 +311,25 @@
         rgba(28,168,94,.18);
     }
 
-
     .create-btn:hover {
-
       transform: translateY(-1px);
     }
 
-
     .create-btn:active {
-
       transform: scale(.98);
     }
 
+    .create-btn:disabled {
 
-    /* =========================
-       STATUS
-    ========================= */
+      opacity: .65;
+
+      cursor: wait;
+
+      transform: none;
+    }
+
+
+    /* STATUS */
 
     .status {
 
@@ -385,15 +355,65 @@
     }
 
 
-    /* =========================
-       TOOLS
-    ========================= */
+    /* VIDEO RESULT */
 
-    .tools {
+    .video-result {
 
-      margin-top: 25px;
+      display: none;
+
+      margin-top: 15px;
+
+      background: #07100c;
+
+      border: 1px solid #245b40;
+
+      border-radius: 18px;
+
+      padding: 12px;
+
+      overflow: hidden;
     }
 
+    .video-result video {
+
+      width: 100%;
+
+      display: block;
+
+      border-radius: 13px;
+
+      background: #000;
+    }
+
+    .video-link {
+
+      display: block;
+
+      margin-top: 10px;
+
+      padding: 12px;
+
+      background: #145a38;
+
+      color: white;
+
+      text-decoration: none;
+
+      text-align: center;
+
+      border-radius: 12px;
+
+      font-size: 13px;
+
+      font-weight: bold;
+    }
+
+
+    /* TOOLS */
+
+    .tools {
+      margin-top: 25px;
+    }
 
     .tools-title {
 
@@ -404,7 +424,6 @@
       margin-bottom: 13px;
     }
 
-
     .tool-grid {
 
       display: grid;
@@ -414,7 +433,6 @@
 
       gap: 10px;
     }
-
 
     .tool {
 
@@ -431,14 +449,12 @@
       transition: .2s;
     }
 
-
     .tool:hover {
 
       border-color: #28523e;
 
       transform: translateY(-2px);
     }
-
 
     .tool-icon {
 
@@ -447,14 +463,12 @@
       margin-bottom: 11px;
     }
 
-
     .tool h3 {
 
       font-size: 14px;
 
       margin-bottom: 7px;
     }
-
 
     .tool p {
 
@@ -466,9 +480,7 @@
     }
 
 
-    /* =========================
-       PRIVATE BADGE
-    ========================= */
+    /* PRIVATE */
 
     .private-box {
 
@@ -491,16 +503,12 @@
       line-height: 1.8;
     }
 
-
     .private-box strong {
-
       color: #35d07f;
     }
 
 
-    /* =========================
-       FOOTER
-    ========================= */
+    /* FOOTER */
 
     footer {
 
@@ -514,9 +522,7 @@
     }
 
 
-    /* =========================
-       MOBILE
-    ========================= */
+    /* MOBILE */
 
     @media (max-width: 380px) {
 
@@ -564,7 +570,6 @@
     </header>
 
 
-
     <!-- HERO -->
 
     <section class="hero">
@@ -579,7 +584,6 @@
       </p>
 
     </section>
-
 
 
     <!-- CREATE -->
@@ -598,14 +602,9 @@
       ></textarea>
 
 
-
-      <label
-        class="label size-title">
-
+      <label class="label size-title">
         📐 مقاس الفيديو
-
       </label>
-
 
 
       <div class="options">
@@ -625,7 +624,6 @@
         </div>
 
 
-
         <div
           class="option"
           data-size="16:9"
@@ -638,7 +636,6 @@
           يوتيوب
 
         </div>
-
 
 
         <div
@@ -658,9 +655,9 @@
       </div>
 
 
-
       <button
         class="create-btn"
+        id="createBtn"
         onclick="createVideo()">
 
         ✨ إنشاء الفيديو
@@ -668,16 +665,36 @@
       </button>
 
 
-
       <div
         class="status"
         id="status">
+      </div>
+
+
+      <div
+        class="video-result"
+        id="videoResult">
+
+        <video
+          id="generatedVideo"
+          controls
+          playsinline>
+        </video>
+
+        <a
+          id="videoLink"
+          class="video-link"
+          target="_blank"
+          rel="noopener">
+
+          ▶️ فتح الفيديو
+
+        </a>
 
       </div>
 
 
     </section>
-
 
 
     <!-- TOOLS -->
@@ -688,7 +705,6 @@
       <div class="tools-title">
         أدوات VIZORA
       </div>
-
 
 
       <div class="tool-grid">
@@ -713,7 +729,6 @@
         </div>
 
 
-
         <div
           class="tool"
           onclick="toolMessage('صورة → فيديو')">
@@ -733,7 +748,6 @@
         </div>
 
 
-
         <div
           class="tool"
           onclick="toolMessage('تحويل النص لصوت')">
@@ -751,7 +765,6 @@
           </p>
 
         </div>
-
 
 
         <div
@@ -779,7 +792,6 @@
     </section>
 
 
-
     <!-- PRIVATE -->
 
     <div class="private-box">
@@ -791,7 +803,6 @@
       VIZORA AI مصمم ليكون أداتك الخاصة.
 
     </div>
-
 
 
     <!-- FOOTER -->
@@ -806,17 +817,20 @@
   </main>
 
 
-
   <script>
+
 
     /* =========================
        VIZORA AI
-       MAIN CONTROLLER
+       VIDEO ENGINE CONNECTION
     ========================= */
 
 
-    let selectedSize = "9:16";
+    const WORKER_URL =
+      "https://vizora-ai-mohamed.mirnaemam93.workers.dev";
 
+
+    let selectedSize = "9:16";
 
 
     /*
@@ -824,7 +838,6 @@
     */
 
     function selectSize(element) {
-
 
       document
         .querySelectorAll(".option")
@@ -841,21 +854,35 @@
       selectedSize =
         element.dataset.size;
 
-
-      console.log(
-        "Video size:",
-        selectedSize
-      );
-
     }
 
+
+    /*
+      عرض الحالة
+    */
+
+    function showStatus(message, error = false) {
+
+      const status =
+        document.getElementById("status");
+
+      status.style.display = "block";
+
+      status.style.color =
+        error
+          ? "#ffd1d1"
+          : "#9ce9bd";
+
+      status.textContent = message;
+
+    }
 
 
     /*
       إنشاء الفيديو
     */
 
-    function createVideo() {
+    async function createVideo() {
 
 
       const prompt =
@@ -865,73 +892,260 @@
           .trim();
 
 
-      const status =
-        document
-          .getElementById("status");
+      const button =
+        document.getElementById("createBtn");
 
+
+      const result =
+        document.getElementById("videoResult");
+
+
+      const video =
+        document.getElementById("generatedVideo");
+
+
+      const videoLink =
+        document.getElementById("videoLink");
 
 
       if (!prompt) {
 
-
-        status.style.display = "block";
-
-
-        status.style.color =
-          "#ffd1d1";
-
-
-        status.textContent =
-          "⚠️ اكتب فكرة الفيديو الأول";
-
+        showStatus(
+          "⚠️ اكتب فكرة الفيديو الأول",
+          true
+        );
 
         document
           .getElementById("prompt")
           .focus();
-
 
         return;
 
       }
 
 
-
       /*
-        حاليًا بنجهز البيانات
-        لمحرك التوليد الحقيقي.
+        إخفاء الفيديو السابق
       */
 
+      result.style.display = "none";
 
-      status.style.display = "block";
+      video.removeAttribute("src");
 
-
-      status.style.color =
-        "#9ce9bd";
-
-
-      status.textContent =
-        "✅ تم استلام فكرتك — VIZORA جاهز لربط محرك الذكاء الاصطناعي 🚀";
+      video.load();
 
 
-      console.log(
-        "VIZORA AI REQUEST"
+      /*
+        حالة التحميل
+      */
+
+      button.disabled = true;
+
+      button.textContent =
+        "⏳ جاري إنشاء الفيديو...";
+
+
+      showStatus(
+        "🎬 VIZORA بدأ إرسال فكرتك إلى محرك الفيديو... قد يستغرق الأمر بعض الوقت."
       );
 
 
-      console.log(
-        "Prompt:",
-        prompt
-      );
+      try {
 
 
-      console.log(
-        "Size:",
-        selectedSize
-      );
+        const response =
+          await fetch(
+            WORKER_URL + "/generate",
+            {
+              method: "POST",
 
+              headers: {
+                "Content-Type":
+                  "application/json"
+              },
+
+              body: JSON.stringify({
+
+                prompt: prompt,
+
+                size: selectedSize
+
+              })
+
+            }
+          );
+
+
+        /*
+          لو حصل خطأ من الـWorker
+        */
+
+        if (!response.ok) {
+
+
+          let errorMessage =
+            "حدث خطأ أثناء إنشاء الفيديو";
+
+
+          try {
+
+            const errorData =
+              await response.json();
+
+
+            if (errorData.error) {
+
+              errorMessage =
+                errorData.error;
+
+            }
+
+            if (errorData.details) {
+
+              console.error(
+                "VIZORA ERROR:",
+                errorData.details
+              );
+
+            }
+
+          } catch (e) {
+
+            const text =
+              await response.text();
+
+            console.error(
+              "SERVER ERROR:",
+              text
+            );
+
+          }
+
+
+          throw new Error(
+            errorMessage
+          );
+
+        }
+
+
+        /*
+          استقبال الفيديو
+        */
+
+        const contentType =
+          response.headers.get(
+            "Content-Type"
+          ) || "";
+
+
+        /*
+          لو رجع JSON بدل فيديو
+        */
+
+        if (
+          contentType.includes(
+            "application/json"
+          )
+        ) {
+
+
+          const data =
+            await response.json();
+
+
+          if (data.error) {
+
+            throw new Error(
+              data.error
+            );
+
+          }
+
+
+          throw new Error(
+            "محرك الفيديو لم يرجع ملف فيديو."
+          );
+
+        }
+
+
+        /*
+          تحويل الفيديو إلى Blob
+        */
+
+        const videoBlob =
+          await response.blob();
+
+
+        if (!videoBlob.size) {
+
+          throw new Error(
+            "تم استلام ملف فيديو فارغ."
+          );
+
+        }
+
+
+        /*
+          إنشاء رابط مؤقت للفيديو
+        */
+
+        const videoUrl =
+          URL.createObjectURL(
+            videoBlob
+          );
+
+
+        video.src =
+          videoUrl;
+
+
+        videoLink.href =
+          videoUrl;
+
+
+        result.style.display =
+          "block";
+
+
+        showStatus(
+          "✅ تم إنشاء الفيديو! 🎉 اضغط تشغيل لمشاهدته."
+        );
+
+
+        result.scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+
+
+      } catch (error) {
+
+
+        console.error(
+          "VIZORA:",
+          error
+        );
+
+
+        showStatus(
+          "❌ " +
+          error.message,
+          true
+        );
+
+      } finally {
+
+
+        button.disabled = false;
+
+        button.textContent =
+          "✨ إنشاء الفيديو";
+
+      }
 
     }
-
 
 
     /*
@@ -941,23 +1155,11 @@
     function toolMessage(tool) {
 
 
-      const status =
-        document
-          .getElementById("status");
-
-
-      status.style.display =
-        "block";
-
-
-      status.style.color =
-        "#9ce9bd";
-
-
-      status.textContent =
+      showStatus(
         "🛠️ أداة " +
         tool +
-        " جاهزة — هنضيف محركها الحقيقي قريبًا.";
+        " هنضيف محركها الحقيقي بعد تشغيل مولد الفيديو الأساسي."
+      );
 
 
       window.scrollTo({
